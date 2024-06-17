@@ -8,7 +8,7 @@
 
 body {
     background-image: url('img/FondoPantalla.png');
-    background-size: 100%;
+  /*   background-size: 100%; */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -16,20 +16,20 @@ body {
 
 section {
     width: 100%;
-    min-height: 100vh;
+    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
+    justify-content: flex-start;
 
 }
 
 header {
-    top: 0px;
     display: flex;
     width: 100%;
     align-items: center;
     margin-top: 10px;
-    position: absolute;
     height: 40px;
     justify-content: space-between;
 
@@ -76,17 +76,26 @@ header .navbar li a:hover {
     display: flex;
     position: relative;
     justify-content: space-between;
-    align-items: left;
+    flex-direction: column;
+    align-content: flex-start;
+ 
     width: 100%;
-    margin-left: 100px;
+    margin-left: 60px;
+    flex-grow: 1;
+    overflow: auto;
+    margin-bottom: 100px;
 }
 
 .contenido .tituloBox {
-    padding: 10px;
+
+    padding: 8px;
 }
 
-.contenido .tituloBox h2 {
+.contenido .tituloBox h1 {
     font-size: 3em;
+}
+.contenido .tituloBox h2 {
+    font-size: 2em;
 }
 
 .contenido .tituloBox p {
@@ -129,3 +138,48 @@ header .navbar li a:hover {
     font-size: 2.5em;
     color: white;
 }
+
+.listado {
+    top: 10em;
+    color: rgb(0, 0, 0);
+    font-size: 1.3em;
+    max-width: 500px;
+}
+
+.listado h1 {
+    text-decoration: underline;
+}
+
+.listado a {
+    color: rgb(255, 255, 255);
+}
+
+.project h1, h2, h3{
+    margin-top: 20px;
+}
+.project li {
+    margin-top: 10px;
+}
+
+.project {
+    margin-top: 50px;
+}
+
+@media only screen and (max-width: 500px) {
+    .contenido {
+        margin-left: 20px;
+
+    }
+  /*   .listado {
+        margin-left: 20px;
+
+    } */
+    .navbar {
+        padding-inline-start: 0px;
+        margin-left: 10px;
+    }
+    .navbar li a {
+        padding-left: 0px;
+    }
+
+  }
