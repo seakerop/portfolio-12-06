@@ -50,15 +50,15 @@ header .logo:hover {
 
 header .navbar {
     display: flex;
-    margin-right: 5em;
+    margin-left: 40px;
 }
 
-header .navbar li {
+header .navbar span {
     list-style: none;
     margin: 10px;
 }
 
-header .navbar li a {
+header .navbar span a {
     text-decoration: none;
     color: rgb(42, 37, 37);
     padding: 10px;
@@ -74,16 +74,14 @@ header .navbar li a:hover {
 
 .contenido {
     display: flex;
-    position: relative;
-    justify-content: space-between;
+    position: relative; 
     flex-direction: column;
-    align-content: flex-start;
- 
     width: 100%;
-    margin-left: 60px;
+    margin-left: 80px;
     flex-grow: 1;
     overflow: auto;
     margin-bottom: 100px;
+    justify-content: center;
 }
 
 .contenido .tituloBox {
@@ -174,11 +172,10 @@ header .navbar li a:hover {
         margin-left: 20px;
 
     } */
-    .navbar {
-        padding-inline-start: 0px;
-        margin-left: 10px;
+    header .navbar {
+        margin-left: 5px;
     }
-    .navbar li a {
+    .navbar span a {
         padding-left: 0px;
     }
 
